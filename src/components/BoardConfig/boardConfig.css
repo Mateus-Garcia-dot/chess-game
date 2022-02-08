@@ -1,0 +1,40 @@
+
+#config {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    
+}
+.pwnSelect {
+    margin: 1px;
+}
+.active {
+    border: 1px solid black !important;
+    border-radius: 10px;
+}
+
+#difficultyContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#difficultyContainer h3{
+    margin: 3% ;
+}
+
+.difficultyButton{
+    font-size: large;
+    font-weight: bold;
+    background:none;
+    border:none;
+    margin:20px;
+    padding:20px;
+    cursor: pointer;
+}
+
+
