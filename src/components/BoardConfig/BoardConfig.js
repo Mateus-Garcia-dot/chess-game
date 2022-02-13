@@ -13,8 +13,8 @@ const BoardConfig = () => {
       setConfigError('Please select a color and difficulty');
       return;
     }
-    cookies.set('playerColor', playerColor, { path: '/' });
-    cookies.set('difficulty', difficulty, { path: '/' });
+    cookies.set('playerColor', playerColor, { path: '/', sameSite: 'strict' });
+    cookies.set('difficulty', difficulty, { path: '/' , sameSite: 'strict' });
     window.location.href = '/';
   }
 
