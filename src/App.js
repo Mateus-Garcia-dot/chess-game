@@ -1,12 +1,13 @@
-import  BoardConfig  from './components/BoardConfig/BoardConfig';
+import { Routes, Route } from 'react-router-dom';
 
+import  BoardConfig  from './components/BoardConfig/BoardConfig';
 
 function App() {
   return (
-    <div>
-      <BoardConfig />
-
-    </div>
+    <Routes>
+      
+      <Route exact path='/config' element={<BoardConfig/>} />
+    </Routes>
     );
 }
 

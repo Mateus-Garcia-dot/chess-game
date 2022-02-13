@@ -1,10 +1,23 @@
 import './boardConfig.css';
 import { useState } from 'react';
 import { pd, pl } from '../chessPieces/index';
+import { cookies } from '../utils/utils';
 
 const BoardConfig = () => {
   const [playerColor, setPlayerColor] = useState('');
   const [difficulty, setDifficulty] = useState('');
+  const [configError, setConfigError] = useState('');
+
+  const handleStart = () => {
+    if (playerColor === '' || difficulty === '') {
+      setConfigError('Please select a color and difficulty');
+      return;
+    }
+    cookies.set('playerColor', playerColor, { path: '/' });
+    cookies.set('difficulty', difficulty, { path: '/' });
+    window.location.href = '/';
+  }
+
 
 return (
   <div className='center' id='config'>
@@ -21,7 +34,10 @@ return (
       <button className={difficulty === 'hard' ? "difficultyButton active" : "difficultyButton"} onClick={(e) => setDifficulty('hard')} > Hard </button>
     </div>
 
-    <button id='startButton'> Start </button>
+    <div id="startButtonContainer">
+      <button id='startButton' onClick={handleStart}> Start </button>
+      <div>{configError}</div>
+    </div>
 
   </div>
   );

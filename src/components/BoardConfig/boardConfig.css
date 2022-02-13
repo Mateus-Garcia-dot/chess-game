@@ -37,6 +37,13 @@
     cursor: pointer;
 }
 
+#startButtonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
 
 #startButton{
     width: 80%;
@@ -47,6 +54,7 @@
     color: inherit;
     border: 1px solid black;
     border-radius: 10px;
+    margin:3%;
 }
 
 #startButton:hover{
