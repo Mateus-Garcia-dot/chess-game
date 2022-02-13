@@ -21,6 +21,8 @@ return (
       <button className={difficulty === 'hard' ? "difficultyButton active" : "difficultyButton"} onClick={(e) => setDifficulty('hard')} > Hard </button>
     </div>
 
+    <button id='startButton'> Start </button>
+
   </div>
   );
 };

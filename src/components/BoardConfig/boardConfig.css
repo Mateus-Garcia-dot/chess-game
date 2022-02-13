@@ -38,3 +38,19 @@
 }
 
 
+#startButton{
+    width: 80%;
+    font-size: 1em;
+    padding: 5%;
+    font-weight: bold;
+    background: none;
+    color: inherit;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#startButton:hover{
+    background: black;
+    color: white;
+    cursor: pointer;
+}
