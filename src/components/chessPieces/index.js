@@ -16,5 +16,22 @@ import rl from './rl.svg' //rook
 import pl from './pl.svg' //pawn
 import nl from './nl.svg' //knight
 
+
+// how the board is set up
+let boardSetUp = 
+[ 
+[ [rd], [nd], [bd], [kd], [qd], [bd], [nd], [rd] ],
+[ [pd], [pd], [pd], [pd], [pd], [pd], [pd], [pd] ],
+[ [""], [""], [""], [""], [""], [""], [""], [""] ],
+[ [""], [""], [""], [""], [""], [""], [""], [""] ],
+[ [""], [""], [""], [""], [""], [""], [""], [""] ],
+[ [""], [""], [""], [""], [""], [""], [""], [""] ],
+[ [pl], [pl], [pl], [pl], [pl], [pl], [pl], [pl] ],
+[ [rl], [nl], [bl], [kl], [ql], [bl], [nl], [rl] ],
+]
+
+
 //export all the images
 export { bd, kd, qd, rd, pd, nd, bl, kl, ql, rl, pl, nl }
+// export board
+export { boardSetUp }
