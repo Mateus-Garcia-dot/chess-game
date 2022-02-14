@@ -15,7 +15,7 @@ const BoardConfig = () => {
     }
     cookies.set('playerColor', playerColor, { path: '/', sameSite: 'strict' });
     cookies.set('difficulty', difficulty, { path: '/' , sameSite: 'strict' });
-    window.location.href = '/';
+    window.location.href = '/play';
   }
 
 

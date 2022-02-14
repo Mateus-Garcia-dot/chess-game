@@ -7,8 +7,8 @@ function App() {
   return (
     <React.StrictMode>
       <Routes>
-        <Route  path="/" element={<ChessBoard />} />
-        <Route exact path='/config' element={<BoardConfig/>} />
+        <Route  exact path="/play" element={<ChessBoard />} />
+        <Route exact path='/' element={<BoardConfig/>} />
       </Routes>
     </React.StrictMode>
     );
